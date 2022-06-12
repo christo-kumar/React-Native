@@ -18,13 +18,15 @@ import { HelloWorld } from './components/HelloWorld';
 import { GoToUdemy } from './components/GoToUdemy';
 import { StateHello } from './components/StateHello';
 import { StylesHello } from './components/StylesHello';
+import { FlexHello } from './components/FlexHello';
 
 const App = () => {
 
   return (
-    <View style={styles.container}>
-      <StylesHello />
-    </View>
+    // <View style={styles.container}>
+    //   <StylesHello />
+    // </View>
+    <FlexHello />
   );
 };
 
