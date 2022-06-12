@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { View, Text, Button, StyleSheet, Linking } from 'react-native';
+import { Text, Button, StyleSheet, Linking } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {

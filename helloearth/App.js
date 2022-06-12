@@ -16,12 +16,13 @@ import {
 
 import { HelloWorld } from './components/HelloWorld';
 import { GoToUdemy } from './components/GoToUdemy';
+import { StateHello } from './components/StateHello';
 
 const App = () => {
 
   return (
     <View style={styles.container}>
-      <GoToUdemy />
+      <StateHello />
     </View>
 
   );
