@@ -17,14 +17,14 @@ import {
 import { HelloWorld } from './components/HelloWorld';
 import { GoToUdemy } from './components/GoToUdemy';
 import { StateHello } from './components/StateHello';
+import { StylesHello } from './components/StylesHello';
 
 const App = () => {
 
   return (
     <View style={styles.container}>
-      <StateHello />
+      <StylesHello />
     </View>
-
   );
 };
 
