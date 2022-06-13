@@ -1,7 +1,7 @@
 /* eslint-disable jsx-quotes */
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, TextInput, Button, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TextInput, Button, View, Alert } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
 });
 
 
-export const ButtonHello = () => {
+export const AlertHello = () => {
     const [text, setText] = useState('...');
     const [submitted, setSubmitted] = useState(false);
 
@@ -42,7 +42,20 @@ export const ButtonHello = () => {
     };
 
     const onButtonPress = () => {
-        setSubmitted(!submitted);
+        if (text.length > 3) {
+            setSubmitted(!submitted);
+        } else {
+            Alert.alert('Warning', 'Longer than 3 character',
+                [
+                    { text: 'OK', onPress: () => { console.log("Hello") }, style: 'destructive' },
+                    { text: 'Cancel', onPress: () => { console.log("Hello") }, style: 'destructive' }
+                ],
+                {
+                    cancelable: true,
+                    onDismiss: () => { console.warn("Alert Closed"); }
+                }
+            );
+        }
     };
 
     return (
