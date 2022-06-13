@@ -20,6 +20,8 @@ import { StateHello } from './components/StateHello';
 import { StylesHello } from './components/StylesHello';
 import { FlexHello } from './components/FlexHello';
 import { ListHello } from './components/ListHello';
+import { FlatListHello } from './components/FlatListHello';
+
 
 const App = () => {
 
@@ -28,7 +30,7 @@ const App = () => {
     //   <StylesHello />
     // </View>
     //<FlexHello />
-    <ListHello />
+    <FlatListHello />
   );
 };
 
