@@ -24,6 +24,8 @@ import { FlatListHello } from './components/FlatListHello';
 import { SectionListHello } from './components/SectionListHello';
 import { TextInputHello } from './components/TextInputHello';
 import { ButtonHello } from './components/ButtonHello';
+import { TouchableHello } from './components/TouchableHello';
+
 
 
 
@@ -34,7 +36,7 @@ const App = () => {
     //   <StylesHello />
     // </View>
     //<FlexHello />
-    <ButtonHello />
+    <TouchableHello />
   );
 };
 
