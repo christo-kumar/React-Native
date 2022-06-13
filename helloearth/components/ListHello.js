@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         marginTop: 3,
         marginLeft: 8,
 
-    }
+    },
 });
 
 export const ListHello = () => {
@@ -37,7 +37,7 @@ export const ListHello = () => {
         setRefresh(true);
         setItem([...items, { key: 6, name: 'Mamma' }]);
         setRefresh(false);
-    }
+    };
 
     return (
         <SafeAreaView style={styles.container}>

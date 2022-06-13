@@ -21,6 +21,7 @@ import { StylesHello } from './components/StylesHello';
 import { FlexHello } from './components/FlexHello';
 import { ListHello } from './components/ListHello';
 import { FlatListHello } from './components/FlatListHello';
+import { SectionListHello } from './components/SectionListHello';
 
 
 const App = () => {
@@ -30,7 +31,7 @@ const App = () => {
     //   <StylesHello />
     // </View>
     //<FlexHello />
-    <FlatListHello />
+    <SectionListHello />
   );
 };
 
