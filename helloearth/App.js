@@ -23,6 +23,8 @@ import { ListHello } from './components/ListHello';
 import { FlatListHello } from './components/FlatListHello';
 import { SectionListHello } from './components/SectionListHello';
 import { TextInputHello } from './components/TextInputHello';
+import { ButtonHello } from './components/ButtonHello';
+
 
 
 const App = () => {
@@ -32,7 +34,7 @@ const App = () => {
     //   <StylesHello />
     // </View>
     //<FlexHello />
-    <TextInputHello />
+    <ButtonHello />
   );
 };
 
