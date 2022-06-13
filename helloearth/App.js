@@ -25,6 +25,7 @@ import { SectionListHello } from './components/SectionListHello';
 import { TextInputHello } from './components/TextInputHello';
 import { ButtonHello } from './components/ButtonHello';
 import { AlertHello } from './components/AlertHello';
+import { ModalHello } from './components/ModalHello';
 
 
 
@@ -37,7 +38,7 @@ const App = () => {
     //   <StylesHello />
     // </View>
     //<FlexHello />
-    <AlertHello />
+    <ModalHello />
   );
 };
 
