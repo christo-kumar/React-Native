@@ -1,7 +1,6 @@
-/* eslint-disable react/self-closing-comp */
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, Pressable } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
