@@ -26,6 +26,7 @@ import { TextInputHello } from './components/TextInputHello';
 import { ButtonHello } from './components/ButtonHello';
 import { AlertHello } from './components/AlertHello';
 import { ModalHello } from './components/ModalHello';
+import { ImageHello } from './components/ImageHello';
 
 
 
@@ -38,7 +39,7 @@ const App = () => {
     //   <StylesHello />
     // </View>
     //<FlexHello />
-    <ModalHello />
+    <ImageHello />
   );
 };
 
