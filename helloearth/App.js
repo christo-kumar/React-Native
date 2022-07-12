@@ -27,7 +27,9 @@ import { ButtonHello } from './components/ButtonHello';
 import { AlertHello } from './components/AlertHello';
 import { ModalHello } from './components/ModalHello';
 import { ImageHello } from './components/ImageHello';
-import { Login } from './components/AsyncStorage/Login';
+import { LoginAsyncStorage } from './components/Storage/LoginAsyncStorage';
+import { Provider } from 'react-redux';
+import { Store } from './components/Storage/Redux/Store';
 
 
 
@@ -36,13 +38,19 @@ import { Login } from './components/AsyncStorage/Login';
 const App = () => {
 
   return (
+    <Provider store={Store}>
+      <LoginAsyncStorage />
+    </Provider>
+
+
+
     // <View style={styles.container}>
     //   <StylesHello />
     // </View>
     //<FlexHello />
     //<SectionListHello />
     //<ModalHello />
-    <Login />
+
   );
 };
 
