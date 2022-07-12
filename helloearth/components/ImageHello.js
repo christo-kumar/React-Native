@@ -39,6 +39,35 @@ const styles = StyleSheet.create({
 });
 
 
+const getMaxChar = (string) => {
+    //write your code here...
+    let charArray = Array.from(string)
+    let charMap = new Map();
+    let maxchar = '';
+    let maxCount = 0;
+    for (let char of charArray) {
+        console.log(char)
+        let count = charMap[char];
+        if (count) {
+            count = count + 1;
+        } else {
+            count = 0;
+        }
+        charMap[char] = count;
+    }
+
+    for (let key of charMap.keys()) {
+        console.log(key);
+        let num = charMap[key];
+        if (num > maxCount) {
+            maxCount = num;
+            maxchar = key;
+        }
+    }
+    return maxchar;
+}
+
+
 export const ImageHello = () => {
     const [text, setText] = useState('...');
     const [submitted, setSubmitted] = useState(false);
@@ -48,6 +77,7 @@ export const ImageHello = () => {
     };
 
     const onButtonPress = () => {
+        console.log("Hello World");
         setSubmitted(!submitted);
     };
 

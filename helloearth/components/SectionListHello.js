@@ -66,6 +66,7 @@ export const SectionListHello = () => {
     return (
         <SafeAreaView style={styles.container}>
             <SectionList
+                keyExtractor={(item, index) => index.toString()}
                 sections={DATA}
                 renderItem={({ item }) => (
                     renderCell(item)
